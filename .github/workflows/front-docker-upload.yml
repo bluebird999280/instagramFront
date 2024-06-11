@@ -1,5 +1,5 @@
 name: CI/CD
-on: [pushh_request]
+on: [push_request]
 jobs : 
   frontend-deploy:
     runs-on: ubuntu-latest
