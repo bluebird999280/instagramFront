@@ -27,6 +27,7 @@ jobs :
           key : ${{ secrets.SERVER_TOKEN }}
           port : 22
           script : |
+            cd instagram_v3
             docker stop instagram_frontend_v3
             docker rm instagram_frontend_v3
             docker image prune -a
